@@ -1,5 +1,0 @@
-c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\RoomBookingDatabaseImplementation\bin\Debug\RoomBookingDatabaseImplementation.dll.config
-c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\RoomBookingDatabaseImplementation\bin\Debug\RoomBookingDatabaseImplementation.dll
-c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\RoomBookingDatabaseImplementation\bin\Debug\RoomBookingDatabaseImplementation.pdb
-c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\RoomBookingDatabaseImplementation\obj\Debug\RoomBookingDatabaseImplementation.dll
-c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\RoomBookingDatabaseImplementation\obj\Debug\RoomBookingDatabaseImplementation.pdb
