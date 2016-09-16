@@ -1,0 +1,12 @@
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\CustomerDatabaseImplementation.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\CustomerDatabaseImplementation.pdb
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\obj\Debug\RegistrationTest.csprojResolveAssemblyReference.cache
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

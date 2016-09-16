@@ -1,0 +1,6 @@
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerEntity\bin\Debug\CustomerEntity.dll.config
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerEntity\bin\Debug\CustomerEntity.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerEntity\bin\Debug\CustomerEntity.pdb
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerEntity\obj\Debug\CustomerEntity.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerEntity\obj\Debug\CustomerEntity.pdb
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerEntity\obj\Debug\CustomerEntity.csprojResolveAssemblyReference.cache

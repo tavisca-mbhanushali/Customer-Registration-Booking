@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WCFHotelBookingMan" Class="LinqToSqlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MAYURESHB;Initial Catalog=WCFHotelBookingMan;Persist Security Info=True;User ID=sa" SettingsObjectName="CustomerDatabaseImplementation.Properties.Settings" SettingsPropertyName="WCFHotelBookingManConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Address" Member="Addresses">
+    <Type Name="Address">
+      <Column Name="HotelId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Locality" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Hotel_Address" Member="Hotel" ThisKey="HotelId" OtherKey="HotelId" Type="Hotel" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BookingDetails" Member="BookingDetails">
+    <Type Name="BookingDetail">
+      <Column Name="BookingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HotelId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RoomId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckInDate" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckOutDate" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NoOfGuests" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Customer_BookingDetail" Member="Customer" ThisKey="CustomerId" OtherKey="CustomerId" Type="Customer" IsForeignKey="true" />
+      <Association Name="Hotel_BookingDetail" Member="Hotel" ThisKey="HotelId" OtherKey="HotelId" Type="Hotel" IsForeignKey="true" />
+      <Association Name="Room_BookingDetail" Member="Room" ThisKey="RoomId" OtherKey="RoomId" Type="Room" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Customer_BookingDetail" Member="BookingDetails" ThisKey="CustomerId" OtherKey="CustomerId" Type="BookingDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Hotels" Member="Hotels">
+    <Type Name="Hotel">
+      <Column Name="HotelId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HotelName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Rating" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="Hotel_Address" Member="Addresses" ThisKey="HotelId" OtherKey="HotelId" Type="Address" />
+      <Association Name="Hotel_BookingDetail" Member="BookingDetails" ThisKey="HotelId" OtherKey="HotelId" Type="BookingDetail" />
+      <Association Name="Hotel_Room" Member="Rooms" ThisKey="HotelId" OtherKey="HotelId" Type="Room" />
+      <Association Name="Hotel_Amenity" Member="Amenities" ThisKey="HotelId" OtherKey="HotelId" Type="Amenity" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rooms" Member="Rooms">
+    <Type Name="Room">
+      <Column Name="RoomId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HotelId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Rate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Room_BookingDetail" Member="BookingDetails" ThisKey="RoomId" OtherKey="RoomId" Type="BookingDetail" />
+      <Association Name="Hotel_Room" Member="Hotel" ThisKey="HotelId" OtherKey="HotelId" Type="Hotel" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Amenities" Member="Amenities">
+    <Type Name="Amenity">
+      <Column Name="HotelId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Amenity" Member="Amenity1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Hotel_Amenity" Member="Hotel" ThisKey="HotelId" OtherKey="HotelId" Type="Hotel" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.spSearchHotel" Method="spSearchHotel">
+    <Parameter Name="City" Parameter="city" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="spSearchHotelResult">
+      <Column Name="HotelId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HotelName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Rating" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Locality" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spInsertCustomer" Method="spInsertCustomer">
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="LastName" Parameter="lastName" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="EmailId" Parameter="emailId" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PhoneNumber" Parameter="phoneNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="customerid" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spInsertBooking" Method="spInsertBooking">
+    <Parameter Name="CustomerId" Parameter="customerId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="HotelId" Parameter="hotelId" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="RoomId" Parameter="roomId" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="CheckInDate" Parameter="checkInDate" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="CheckOutDate" Parameter="checkOutDate" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NoOfGuests" Parameter="noOfGuests" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BookingId" Parameter="bookingId" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spFilterByRating" Method="spFilterByRating">
+    <Parameter Name="City" Parameter="city" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Rating" Parameter="rating" Type="System.Double" DbType="Float" />
+    <ElementType Name="spFilterByRatingResult">
+      <Column Name="HotelId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HotelName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Rating" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Locality" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

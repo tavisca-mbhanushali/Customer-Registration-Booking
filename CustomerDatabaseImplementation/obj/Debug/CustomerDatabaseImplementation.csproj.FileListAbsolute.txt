@@ -1,0 +1,16 @@
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\CustomerDatabaseImplementation.dll.config
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\CustomerDatabaseImplementation.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\CustomerDatabaseImplementation.pdb
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\CustomerEntity.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\CustomerEntity.pdb
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\obj\Debug\CustomerDatabaseImplementation.csprojResolveAssemblyReference.cache
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\obj\Debug\CustomerDatabaseImplementation.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\obj\Debug\CustomerDatabaseImplementation.pdb
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\Castle.Core.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\Mindbox.Expressions.dll
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\Castle.Core.xml
+c:\users\mbhanushali\documents\visual studio 2015\Projects\CustomerDatabaseImplementation\CustomerDatabaseImplementation\bin\Debug\Mindbox.Expressions.xml
